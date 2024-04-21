@@ -1,0 +1,146 @@
+
+.task-bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../public/Images/bg.png');
+}
+.modal {
+    position: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    overflow: auto;
+}
+
+.modal-content {
+    background: #dcdcdc;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 400px;
+}
+
+.modal-content h2{
+    color: #000;
+}
+
+.closeTask {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000;
+}
+
+.closeTask:hover {
+    color: red;
+}
+
+.color-options {
+    display: flex;
+}
+
+.color-option:hover {
+    border: 2px solid black;
+}
+
+.color-option {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+.emoji-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.emoji-list {
+    display: none;
+    flex-wrap: wrap;
+    gap: 5px;
+    max-height: 100px; /* Set a max height for scrolling */
+    overflow-y: auto; /* Enable vertical scrolling if needed */
+    background-color: #dcdcdc;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    z-index: 1000;
+}
+
+.emoji-list.visible{
+    display: block;
+}
+
+.emoji-option {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.emoji-option:hover {
+    background-color: #3cb371;
+}
+
+.save-task{
+    color:#dcdcdc;
+    background-color: #000;
+    border-color: #dcdcdc;
+}
+
+.remove-task {
+    position: fixed;
+    top: 62%; /* Adjust the top distance as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #3cb371; /* Blue background color */
+    color: #dcdcdc; /* White text color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: large;
+}
+
+.remove-task:hover {
+    color:#3cb371;
+    background-color: white; /* Darker blue on hover */
+    border-color: #3cb371;
+    border-radius: 20px;
+}
+
+.save-edit {
+    position: fixed;
+    top: 62%; /* Adjust the top distance as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #3cb371; /* Blue background color */
+    color: #dcdcdc; /* White text color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: large;
+}
+
+.save-edit:hover {
+    color:#3cb371;
+    background-color: white; /* Darker blue on hover */
+    border-color: #3cb371;
+    border-radius: 20px;
+}
+

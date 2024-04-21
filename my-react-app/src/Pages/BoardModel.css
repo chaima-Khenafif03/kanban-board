@@ -1,0 +1,62 @@
+
+.board-bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../public/Images/bg.png');
+}
+.board-modal {
+    position: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    overflow: auto;
+}
+
+.board-modal-content {
+    background: #dcdcdc;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 400px;
+}
+
+.board-modal-content h2{
+    color: #000;
+}
+
+.closeBoard{
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000;
+}
+
+.closeBoard:hover{
+    color: red;
+}
+
+
+
+.save-board{
+    color:#dcdcdc;
+    background-color: #000;
+    border-color: red;
+}
+
+.save-board:hover{
+    color:red;
+    background-color: wheat;
+    border-color:black;
+    border-radius: 20px;
+}
+
+
+

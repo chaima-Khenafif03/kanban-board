@@ -1,0 +1,73 @@
+.create-board-bg{
+    display: flex;
+    min-height: 100vh;
+    background-image: url('../public/Images/bg.png');
+}
+
+/* Add these styles to your CSS file */
+
+.create-board-bg button {
+    position: fixed;
+
+    top: 20px; /* Adjust the top distance as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #3cb371; /* Blue background color */
+    color: #dcdcdc; /* White text color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: large;
+}
+
+.create-board-bg button:hover {
+    color:#3cb371;
+    background-color: #dcdcdc; /* Darker blue on hover */
+    border-color: #3cb371;
+    border-radius: 20px;
+}
+    .circle1 {
+        position: absolute;
+        bottom: 120px;
+        right: 50px;
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+        background: linear-gradient(to top, #3cb371, transparent);
+    }
+    
+    .circle1:after{
+        content: "";
+        position: absolute;
+        width: 360px;
+        height: 360px;
+        background:url('../public/Images/bg.png');
+        border-radius: 50%;
+        top: calc(50% - 180px);
+        left: calc(50% - 180px);
+    }
+
+
+.circle1:hover{
+    background: linear-gradient(to left, #dcdcdc, #232b2b);
+    width: 400px;
+    height: 400px;
+}    
+    
+    .circle2 {
+        position: absolute;
+        top: 100px;
+        left: 350px;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background: linear-gradient(to top, #3cb371, #232b2b);
+    }
+
+.circle2:hover{
+    background: linear-gradient(to bottom, #dcdcdc, #232b2b);
+    width: 200px;
+    height: 200px;
+}    
+

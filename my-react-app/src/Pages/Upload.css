@@ -1,0 +1,103 @@
+
+.wrapperUpload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../public/Images/bg.png');
+}
+
+.boxUpload {
+    max-width: 500px;
+    background: #dcdcdc;
+    padding: 30px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.upload-area-titleUpload {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.upload-label {
+    width: 100%;
+    min-height: 100px;
+    background: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px dashed #3cb371;
+    cursor: pointer;
+}
+
+.upload-label span {
+    font-size: 70px;
+    color:#3cb371;
+}
+
+.upload-label p {
+    color: black;
+    font-size: 20px;
+    font-weight: 800;
+    font-family: cursive;
+}
+
+.uploaded {
+    margin: 30px 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #3cb371;
+}
+
+.showfileboxUpload {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 10px 15px;
+    box-shadow: 0px 0px 0px 1px black, 0px 0px 0px 1px white;
+}
+
+.showfileboxUpload .leftUpload {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.filetype {
+    background:#3cb371;
+    color: aliceblue;
+    padding: 5px 15px;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 700;
+    border-radius: 3px;
+}
+
+.leftUpload h3 {
+    font-weight: 600;
+    font-size: 18px;
+    color: black;
+    margin: 0;
+}
+
+.rightUpload span {
+    background: red;
+    color: aliceblue;
+    width: 25px;
+    height: 25px;
+    font-size: 25px;
+    line-height: 25px;
+    display: inline-block;
+    text-align: center;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 50%;
+}

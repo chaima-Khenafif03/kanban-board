@@ -1,0 +1,37 @@
+.board{
+    display: flex;
+    min-height: 100vh;
+    background-image: url('../public/Images/bg.png');
+}
+
+.input-board-name {
+    position: fixed;
+    top: 20px; /* Adjust the top distance as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    color: #dcdcdc; /* White text color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none;
+    border-radius: 5px;
+}
+
+#BoardName::placeholder {
+    font-size: 16px;
+    padding: 20px; /* Adjust the font size as needed */
+    /* You can also add other styles like color, font-weight, etc. */
+  }
+
+  #BoardName {
+    width: 300px; /* Set the desired width */
+    height: 40px; /* Set the desired height */
+    /* You can add other styles like border, padding, etc. */
+  }
+  .small-circle-board {
+    position: absolute;
+    bottom: 630px;
+    right: 100px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(to top, #3cb371, transparent);
+}

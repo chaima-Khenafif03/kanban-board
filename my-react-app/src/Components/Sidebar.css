@@ -1,0 +1,116 @@
+
+.side-bar{
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(15px);
+    width: 290px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -290px; /* Change to the width of the sidebar */
+    transition: left 0.6s ease; /* Transition left property */
+    overflow-y: auto;
+    transition-property: left;
+}
+
+.side-bar.active {
+    left: 0;
+}
+
+.side-bar .menu{
+    width: 100%;
+    margin-top: 80px;
+}
+
+.side-bar .menu .item {
+    position: relative;
+    cursor: pointer;
+}
+
+.side-bar .menu .item a{
+    color: #dcdcdc;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    padding: 5px 30px;
+    line-height: 60px;
+}
+
+.side-bar .menu .item a:hover{
+    color: #232b2b;
+}
+
+.side-bar .menu .item a:hover{
+    background:#3cb371;
+    transition: 0.3s ease;
+}
+
+.side-bar .menu .item i{
+    margin-right: 15px;
+}
+
+.side-bar .menu .item a .dropdown{
+    position: absolute;
+    margin: 20px;
+    right: 0;
+    transition: 0.3s ease;
+}
+
+
+.side-bar .menu .item .sub-menu{
+    background: rgba(255,255,255,0.1);
+    display: none;
+}
+
+.side-bar .menu .item:hover .sub-menu {
+    display: block;
+}
+
+
+.side-bar .menu .item .sub-menu a{
+    padding-left: 80px;
+}
+
+.rotate{
+    transform: rotate(90deg);
+}
+
+.close-btn{
+    position: absolute;
+    color: #232b2b;
+    font-size: 20px;
+    right: 0;
+    margin: 25px;
+    cursor: pointer;
+}
+
+.close-btn:hover{
+    color: red;
+}
+
+.menu-btn{
+    position: absolute;
+    color: #dcdcdc;
+    font-size: 40px;
+    margin: 25px;
+    cursor: pointer;
+}
+
+.menu-btn:hover{
+    color: #232b2b;
+}
+
+.main {
+    height: 100vh;
+    display: flex; /* Change display property to flex */
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+
+.main h2{
+    color: #3cb371;
+    font-size: 60px;
+    text-align: center;
+    line-height: 80px;
+}

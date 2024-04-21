@@ -1,0 +1,51 @@
+
+
+/* About.css */   
+main {
+    min-height: 100vh;
+    background-image: url('../public/Images/bg.png');
+        
+}
+  
+
+h1{
+    color: #080808;
+}
+
+h2 {
+    margin-top: 10px;
+    padding: 0px;
+    color: #3cb371;
+    size: 50px;
+}
+
+li,p{
+    color: #080808;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+
+
+
+@keyframes show-right {
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes fade-in {
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
